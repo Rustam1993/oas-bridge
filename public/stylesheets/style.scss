@@ -148,3 +148,82 @@ nav a{
   min-height: 84vh;
   float: left;
 }
+
+
+
+@media  only screen and (max-width: 600px){
+  html {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  nav{
+    font-family: "Comic Sans MS";
+    font-size: 1.5vw;
+    height: 13vh;
+  }
+  .links-in-nav-bar {
+    width: 100%;
+    font-size: 3.5vw;
+    height: 7vh;
+    margin-bottom: 10vh;
+  }
+
+  .page{
+    max-height: 80vh;
+  }
+  .links-in-nav-bar {
+    width: 100%;
+    font-size: 3.5vw;
+    height: 7vh;
+  }
+  .logo-image-in-nav-bar {
+    width: 37vw;
+    height: 4vh;
+    float: none;
+    text-align: center;
+    display: flex;
+    margin: auto 35vw auto auto;
+  }
+  .logo-image-in-nav-bar img {
+    height: 7vh;
+    margin: auto;
+  }
+  .home-page-pitch{
+    width: 100%;
+    min-height: 19vh;
+    margin-top: 16vh;
+  }
+  .home-page-pitch h1{
+    font-size: 7.5vw;
+
+  }
+  .home-page-pitch h2{
+    font-size: 6vw;
+  }
+
+  .home-page-pitch h3{
+    font-size: 6vw;
+  }
+  .image-section
+  {
+    background-size: contain;
+    width: 100%;
+
+  }
+  .about-page-image {
+    background-size: contain;
+    width: 100%;
+  }
+  .home-page-pitch-version-2{
+    width: 100%;
+    float:none;
+  }
+  // #logo{
+  //   display: none;
+  // }
+
+
+
+
+
+}
