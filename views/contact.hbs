@@ -2,12 +2,48 @@
   
   <div class="home-page-pitch-version-2">
     <h1>CONTACT US</h1>
+
+    <form class="contact-us" action="/send-email" method="POST">
+
+      <div>
+        <label id = "name">Name*</label>
+        <input name="name" type="text" required />
+      </div>
+
+      <div>
+        <label id = "phone-number">Phone Number</label>
+        <input  name="phoneNumber"/>
+      </div>
+
+      <div>
+        <label id="email-address">Email address*</label>
+        <input name="email" type="email" required/>
+      </div>
+
+      <div>
+        <label id="comments">Comments*</label>
+        <input name = "comments"type="text" required />
+      </div>
+
+      
+      <p> * - required fields</p>
+      
+      <input  id="submit-input" type="submit" />
+      
+
+    </form>
+
+    
+    
+    
+    
+    {{!-- <h1>CONTACT US</h1>
     <p>Name*</p>
     <p>Phone umber</p>
     <p>Email address*</p>
     <p>Comments*</p>
     <p>*-required fields</p>
-    <p>Submit</p>
+    <p>Submit</p> --}}
   </div>
   <div class="contact-page-image">
 
