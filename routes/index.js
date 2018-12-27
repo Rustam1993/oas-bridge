@@ -42,7 +42,7 @@ router.post('/send-email', (req, res, next) => {
 });
   transporter.sendMail({
     from: email,
-    to: process.env.emailAddress, 
+    to: 'rstsmg1@gmail.com', 
     subject: `${name}, ${phoneNumber}`, 
     text: comments,
   })
