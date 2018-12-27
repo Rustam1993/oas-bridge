@@ -141,8 +141,9 @@ nav a {
   border: none;
   font-family: "Caveat";
   font-size: 2vw;
-  margin-left: 14vw;
-  cursor: pointer; }
+  margin-left: 14.1vw;
+  cursor: pointer;
+  background: none; }
 
 .contact-us p {
   margin-top: 12vh; }

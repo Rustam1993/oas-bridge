@@ -28,15 +28,21 @@ router.get('/contact', (req, res, next) => {
 router.post('/send-email', (req, res, next) => {
   let { name, phoneNumber, email, comments } = req.body;
   let transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'gmail',
+    secure : false,
+    port: 25,
+
     auth: {
       user: process.env.emailAddress,
       pass: process.env.emailPassword
+    },
+    tls : {
+      rejectUnauthorized : false
     }
   });
   transporter.sendMail({
     from: email,
-    to: 'rstsmg1@gmail.com', 
+    to: process.env.emailAddress, 
     subject: `${name}, ${phoneNumber}`, 
     text: comments,
   })
