@@ -197,6 +197,10 @@ nav a{
   margin-top:12vh ;
 }
 
+#fields{
+
+}
+
 @media  only screen and (max-width: 600px){
   html {
     max-height: 100vh;
@@ -205,13 +209,13 @@ nav a{
   nav{
     font-family: "Comic Sans MS";
     font-size: 1.5vw;
-    height: 13vh;
+    height: 10vh;
   }
   .links-in-nav-bar {
     width: 100%;
     font-size: 3.5vw;
     height: 7vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
   }
 
   .page{
@@ -237,7 +241,7 @@ nav a{
   .home-page-pitch{
     width: 100%;
     min-height: 19vh;
-    margin-top: 16vh;
+    margin-top: 12vh;
   }
   .home-page-pitch h1{
     font-size: 7.5vw;
@@ -268,8 +272,52 @@ nav a{
   //   display: none;
   // }
 
+  .home-page-pitch-version-2 h1{
 
+    margin-bottom: 7vh;
+    margin-top: 3vh;
+  }
 
+  .home-page-pitch-version-2 p{
+    font-size: 5vw;
+  }
 
+  .customers-page-image{
+    background-size: contain;
+    width: 100%;
+  }
+  .services-page-image{
+    background-size: contain;
+    width: 100%;
+  }
 
+  .contact-us label {
+    font-size: 6vw;
+  }
+  .contact-us input {
+    width: 50%;
+    border: 1px solid black;
+  }
+  #name{
+    margin-right: 18vw;
+  }
+  #phone-number{
+    margin-right: 1.9vw;
+  }
+  #comments{
+    margin-right: 8.89vw;
+  }
+  #fields{
+    margin-top: 4vh;
+  }
+  #submit-input{
+    margin-left: 24vw;
+    background: none;
+    font-size: 5vw;
+  }
+  .contact-page-image{
+    background-size: contain;
+    width: 100%;
+    margin-top: 1vh;
+  }
 }
