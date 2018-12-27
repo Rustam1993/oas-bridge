@@ -28,18 +28,17 @@ router.get('/contact', (req, res, next) => {
 router.post('/send-email', (req, res, next) => {
   let { name, phoneNumber, email, comments } = req.body;
   let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    secure : false,
-    port: 25,
-
-    auth: {
-      user: process.env.emailAddress,
-      pass: process.env.emailPassword
-    },
-    tls : {
-      rejectUnauthorized : false
+   host: 'smtp.gmail.com',
+   port: 465,
+   secure: true,
+   auth: {
+        type: 'OAuth2',
+        user: process.env.emailAddress,
+        clientId: '199652032781-aqu8uk1hgtgiu01r3j2ckj477vd5ug71.apps.googleusercontent.com',
+        clientSecret: 'x0TW_nk6UuebtFBg5e3SJBm-',
+        refreshToken: '1/E3Q7y4TraN5BAqL1r1SdDO0knor9b0UDJTTn6rj0jIM'
     }
-  });
+});
   transporter.sendMail({
     from: email,
     to: process.env.emailAddress, 
