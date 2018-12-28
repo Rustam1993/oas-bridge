@@ -33,16 +33,16 @@ router.post('/send-email', (req, res, next) => {
    secure: true,
    auth: {
         type: 'OAuth2',
-        user: 'rstsmg1@gmail.com',
-        clientId: '199652032781-aqu8uk1hgtgiu01r3j2ckj477vd5ug71.apps.googleusercontent.com',
-        clientSecret: 'x0TW_nk6UuebtFBg5e3SJBm-',
-        refreshToken: '1/E3Q7y4TraN5BAqL1r1SdDO0knor9b0UDJTTn6rj0jIM',
-        accessToken: 'ya29.GluABsc1FLhp9GNH-xRwQOcfINSXYk6_xUY7Ik-tt56hxjtYauktY1a6d32NoHdT7YIQMdSTIq0dOfA8vf7aRfhIeDQXsbkur-hPH9BlzAkmDH7mznB-av4q_0_F',
+        user: process.env.emailAddress,
+        clientId: process.env.clientId,
+        clientSecret: process.env.clientSecret,
+        refreshToken: process.env.refreshToken,
+        accessToken: process.env.accessToken
     }
 });
   transporter.sendMail({
     from: email,
-    to: 'rstsmg1@gmail.com', 
+    to: process.env.emailAddress, 
     subject: `${name}, ${phoneNumber}`, 
     text: comments,
   })
