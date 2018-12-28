@@ -33,7 +33,7 @@ router.post('/send-email', (req, res, next) => {
    secure: true,
    auth: {
         type: 'OAuth2',
-        user: process.env.emailAddress,
+        user: 'rstsmg1@gmail.com',
         clientId: '199652032781-aqu8uk1hgtgiu01r3j2ckj477vd5ug71.apps.googleusercontent.com',
         clientSecret: 'x0TW_nk6UuebtFBg5e3SJBm-',
         refreshToken: '1/E3Q7y4TraN5BAqL1r1SdDO0knor9b0UDJTTn6rj0jIM',
