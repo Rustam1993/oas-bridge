@@ -41,14 +41,14 @@ router.post('/send-email', (req, res, next) => {
     }
 });
   transporter.sendMail({
-    from: email,
+    from: req.body.email,
     to: process.env.emailAddress, 
-    subject: `${name}, ${phoneNumber}`, 
-    text: comments,
+    subject: `${req.body.name}, ${req.body.email}`, 
+    text: req.body.comments,
   })
   .then(info => {
+    console.log(info, req.body.email)
     res.redirect('/contact')
-    console.log(info)
   } )
   .catch(error => console.log('Error',error));
 });
